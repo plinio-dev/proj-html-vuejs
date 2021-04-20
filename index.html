@@ -138,33 +138,12 @@
         </div>
         <div class="cards">
           <div class="flex-box pd-bt-40">
-            <div class="card">
+            <div class="card" v-for="element in products">
               <div class="item pd-bt-20">
-                <img src="img/brush_dark-400x400.png" alt="trimmer">
+                <img :src="element.img" alt="trimmer">
               </div>
-              <h4 class="pd-bt-30"><a href="#">Brush</a></h4>
-              <div class="text-box"><p>$15.00</p></div>
-            </div>
-            <div class="card">
-              <div class="item pd-bt-20">
-                <img src="img/scissors-400x400.png" alt="trimmer">
-              </div>
-              <h4 class="pd-bt-30"><a href="#">Scissors</a></h4>
-              <div class="text-box"><p>$85.00</p></div>
-            </div>
-            <div class="card">
-              <div class="item pd-bt-20">
-                <img src="img/hot_oil_dark-400x400.png" alt="trimmer">
-              </div>
-              <h4 class="pd-bt-30"><a href="#">Hot Oil</a></h4>
-              <div class="text-box"><p>$15.00</p></div>
-            </div>
-            <div class="card">
-              <div class="item pd-bt-20">
-                <img src="img/straight_razor_dark-400x400.png" alt="trimmer">
-              </div>
-              <h4 class="pd-bt-30"><a href="#">Straight Razor</a></h4>
-              <div class="text-box"><p>$30.00</p></div>
+              <h4 class="pd-bt-30"><a href="#">{{element.name}}</a></h4>
+              <div class="text-box"><p>{{element.prize}}</p></div>
             </div>
           </div>
           <div class="pd-bt-30">
@@ -198,6 +177,7 @@
         </div>
       </div>
       <!-- prodotti del mese -->
+
       <!-- reviews -->
       <section id="reviews" class="container-full">
         <div class="container-small">
@@ -209,7 +189,7 @@
                 <p>{{element.text}}</p>
               </div>
               <div class="item pd-bt-20">
-                <img class="circle" :src=" 'img/avadabarbers-trimcut-gallery' + element.id + '.jpg'" alt="people">
+                <img class="circle" :src=" 'img/avadabarbers-trimcut-gallery' + element.img + '.jpg'" alt="people">
               </div>
               <div class="text-box"><p><strong>{{element.name}}</strong></p></div>
             </div>
@@ -231,14 +211,9 @@
         </div>
 
       </section>
-          </main>
-          <footer></footer>
-        </div>
-
-
-
-
-
+    </main>
+    <footer></footer>
+  </div>
 
 <script src="src/app.js" charset="utf-8"></script>
 </body>
