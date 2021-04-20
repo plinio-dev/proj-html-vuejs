@@ -15,246 +15,225 @@
   <title>Barber shop</title>
 </head>
 <body>
-  <header id="app">
-    <div class="wrapper container-full">
-      <!-- navbar -->
-      <nav class="container-full">
-        <!-- menu fisso -->
-        <div class="menu container-small">
-          <div class="logo">
-            <a href="#"><img id="logo" src="img/avadabarbers-logo-x2-300x104.png" alt=""></a>
+  <div class="vue" id="app">
+
+
+
+    <header >
+      <div class="wrapper container-full">
+        <!-- navbar -->
+        <nav class="container-full">
+          <!-- menu fisso -->
+          <div class="menu container-small">
+            <div class="logo">
+              <a href="#"><img id="logo" src="img/avadabarbers-logo-x2-300x104.png" alt=""></a>
+            </div>
+            <div class="icone-menu">
+              <a class="pd-lf-20" href="#"><i id="cart" class="fas fa-shopping-cart"></i></a>
+              <a  @click="menuOn" class="pd-lf-20" href="#"><i id="hamburgher" class="fas fa-bars"></i></a>
+            </div>
           </div>
-          <div class="icone-menu">
-            <a class="pd-lf-20" href="#"><i id="cart" class="fas fa-shopping-cart"></i></a>
-            <a  @click="menuOn" class="pd-lf-20" href="#"><i id="hamburgher" class="fas fa-bars"></i></a>
+          <!-- menu fisso -->
+          <!-- flying menu -->
+          <div :class="display">
+            <div class="fly-menu">
+              <ul>
+                <li v-for="(item,index) in menuItems"><a href=""><span>{{item}}</span></a></li>
+              </ul>
+              <div class="bgs-items"></div>
+              <div class="bgs-menu"></div>
+            </div>
+          </div>
+          <!-- flying menu -->
+        </nav>
+        <!-- navbar -->
+        <!-- hero -->
+        <div class="hero container-full container-small">
+          <div class="hero-left">
+            <a href="#"><h1 class="mrg-bttm-40">Barber Shop</h1></a>
+            <div class="mrg-bttm-40">
+              <div class="separator1"></div>
+            </div>
+            <p class="mrg-bttm-40"><span>The Pinnacle of Male Grooming</span></p>
+            <div>
+              <a class="btn-big" href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="hero-wright">
+            <div class="barber">
+              <img src="img/avadabarbers_hero_focalmirror-600x825.png" alt="">
+            </div>
           </div>
         </div>
-        <!-- menu fisso -->
-        <!-- flying menu -->
-        <div :class="display">
-          <div class="fly-menu">
-            <ul>
-              <li v-for="(item,index) in menuItems"><a href=""><span>{{item}}</span></a></li>
-              <!-- <li><a href=""><span>About US</span></a></li>
-              <li><a href=""><span>Services</span></a></li>
-              <li><a href=""><span>Shop</span></a></li>
-              <li><a href=""><span>Our Team</span></a></li>
-              <li><a href=""><span>Blog</span></a></li>
-              <li><a href=""><span>Contact Us</span></a></li> -->
-            </ul>
-            <div class="bgs-items"></div>
-            <div class="bgs-menu"></div>
-          </div>
-        </div>
-        <!-- flying menu -->
-      </nav>
-      <!-- navbar -->
-      <!-- hero -->
-      <div class="hero container-full container-small">
-        <div class="hero-left">
-          <a href="#"><h1 class="mrg-bttm-40">Barber Shop</h1></a>
-          <div class="mrg-bttm-40">
-            <div class="separator1"></div>
-          </div>
-          <p class="mrg-bttm-40"><span>The Pinnacle of Male Grooming</span></p>
-          <div>
-            <a class="btn-big" href="#">Learn more</a>
-          </div>
-        </div>
-        <div class="hero-wright">
-          <div class="barber">
-            <img src="img/avadabarbers_hero_focalmirror-600x825.png" alt="">
-          </div>
-        </div>
+        <!-- hero -->
       </div>
-      <!-- hero -->
-    </div>
-  </header>
+    </header>
 
 
-  <main>
-    <!-- barbers -->
-    <section id="pro-barbers" class="container-full">
-      <div class="container-small">
-        <h2 class="pd-bt-20">Award winning</h2>
-        <h3 class="pd-bt-30">Pro Barbers</h3>
-        <div class="pd-bt-30">
-          <a class="btn-big" href="#">Meet your new barber</a>
+    <main>
+      <!-- barbers -->
+      <section id="pro-barbers" class="container-full">
+        <div class="container-small">
+          <h2 class="pd-bt-20">Award winning</h2>
+          <h3 class="pd-bt-30">Pro Barbers</h3>
+          <div class="pd-bt-30">
+            <a class="btn-big" href="#">Meet your new barber</a>
+          </div>
         </div>
+      </section>
+      <!-- barbers -->
+
+      <!-- separatore -->
+      <div class="separator bg-brown container-full">
+        <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#ffffff;padding:0;"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
       </div>
-    </section>
-    <!-- barbers -->
+      <!-- separatore -->
 
-    <!-- separatore -->
-    <div class="separator bg-brown container-full">
-      <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#ffffff;padding:0;"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
-    </div>
-    <!-- separatore -->
-
-    <!-- servizi -->
-    <section id="services" class="container-full">
-      <div class="container-small ">
-        <h2 class="pd-bt-20">mens grooming</h2>
-        <h3 class="pd-bt-30">Services</h3>
-        <div class="flex-box pd-bt-40">
-          <div class="box">
-            <div class="item pd-bt-20">
-              <img src="img/avadabarbers-trimcut-icon-before.png" alt="trimmer">
+      <!-- servizi -->
+      <section id="services" class="container-full">
+        <div class="container-small ">
+          <h2 class="pd-bt-20">mens grooming</h2>
+          <h3 class="pd-bt-30">Services</h3>
+          <div class="flex-box pd-bt-40">
+            <div class="box">
+              <div class="item pd-bt-20">
+                <img src="img/avadabarbers-trimcut-icon-before.png" alt="trimmer">
+              </div>
+              <h4 class="pd-bt-30"><a href="#">Trim & Cut</a></h4>
+              <div class="text-box"><p>Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.</p></div>
             </div>
-            <h4 class="pd-bt-30"><a href="#">Trim & Cut</a></h4>
-            <div class="text-box"><p>Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.</p></div>
+            <div class="box">
+              <div class="item pd-bt-20">
+                <img src="img/avadabarbers-washndry-icon.png" alt="trimmer">
+              </div>
+              <h4 class="pd-bt-30"><a href="#">Wash & Dry</a></h4>
+              <div class="text-box"><p>Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.</p></div>
+            </div>
+            <div class="box">
+              <div class="item pd-bt-20">
+                <img src="img/avadabarbers-beardtrim-icon.png" alt="trimmer">
+              </div>
+              <h4 class="pd-bt-30"><a href="#">Beard Tidy</a></h4>
+              <div class="text-box"><p>Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.</p></div>
+            </div>
           </div>
-          <div class="box">
-            <div class="item pd-bt-20">
-              <img src="img/avadabarbers-washndry-icon.png" alt="trimmer">
-            </div>
-            <h4 class="pd-bt-30"><a href="#">Wash & Dry</a></h4>
-            <div class="text-box"><p>Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.</p></div>
-          </div>
-          <div class="box">
-            <div class="item pd-bt-20">
-              <img src="img/avadabarbers-beardtrim-icon.png" alt="trimmer">
-            </div>
-            <h4 class="pd-bt-30"><a href="#">Beard Tidy</a></h4>
-            <div class="text-box"><p>Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.</p></div>
+          <div class="pd-bt-30">
+            <a class="btn-big" href="#">read about our services</a>
           </div>
         </div>
-        <div class="pd-bt-30">
-          <a class="btn-big" href="#">read about our services</a>
-        </div>
+      </section>
+      <!-- servizi -->
+
+      <!-- separatore -->
+      <div class="separator bg-white container-full">
+        <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#141415;padding:0;"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
       </div>
-    </section>
-    <!-- servizi -->
+      <!-- separatore -->
 
-    <!-- separatore -->
-    <div class="separator bg-white container-full">
-      <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#141415;padding:0;"><path d="M0 100 L50 2 L100 100 Z"></path></svg>
-    </div>
-    <!-- separatore -->
-
-    <!-- prodotti -->
-    <section id="products" >
-      <div class="titoli">
-        <h2 class="pd-bt-20">we have you covered</h2>
-        <h3 class="pd-bt-30">Avada Grooming Products</h3>
-      </div>
-      <div class="cards">
-        <div class="flex-box pd-bt-40">
-          <div class="card">
-            <div class="item pd-bt-20">
-              <img src="img/brush_dark-400x400.png" alt="trimmer">
+      <!-- prodotti -->
+      <section id="products" >
+        <div class="titoli">
+          <h2 class="pd-bt-20">we have you covered</h2>
+          <h3 class="pd-bt-30">Avada Grooming Products</h3>
+        </div>
+        <div class="cards">
+          <div class="flex-box pd-bt-40">
+            <div class="card">
+              <div class="item pd-bt-20">
+                <img src="img/brush_dark-400x400.png" alt="trimmer">
+              </div>
+              <h4 class="pd-bt-30"><a href="#">Brush</a></h4>
+              <div class="text-box"><p>$15.00</p></div>
             </div>
-            <h4 class="pd-bt-30"><a href="#">Brush</a></h4>
-            <div class="text-box"><p>$15.00</p></div>
+            <div class="card">
+              <div class="item pd-bt-20">
+                <img src="img/scissors-400x400.png" alt="trimmer">
+              </div>
+              <h4 class="pd-bt-30"><a href="#">Scissors</a></h4>
+              <div class="text-box"><p>$85.00</p></div>
+            </div>
+            <div class="card">
+              <div class="item pd-bt-20">
+                <img src="img/hot_oil_dark-400x400.png" alt="trimmer">
+              </div>
+              <h4 class="pd-bt-30"><a href="#">Hot Oil</a></h4>
+              <div class="text-box"><p>$15.00</p></div>
+            </div>
+            <div class="card">
+              <div class="item pd-bt-20">
+                <img src="img/straight_razor_dark-400x400.png" alt="trimmer">
+              </div>
+              <h4 class="pd-bt-30"><a href="#">Straight Razor</a></h4>
+              <div class="text-box"><p>$30.00</p></div>
+            </div>
           </div>
-          <div class="card">
-            <div class="item pd-bt-20">
-              <img src="img/scissors-400x400.png" alt="trimmer">
-            </div>
-            <h4 class="pd-bt-30"><a href="#">Scissors</a></h4>
-            <div class="text-box"><p>$85.00</p></div>
-          </div>
-          <div class="card">
-            <div class="item pd-bt-20">
-              <img src="img/hot_oil_dark-400x400.png" alt="trimmer">
-            </div>
-            <h4 class="pd-bt-30"><a href="#">Hot Oil</a></h4>
-            <div class="text-box"><p>$15.00</p></div>
-          </div>
-          <div class="card">
-            <div class="item pd-bt-20">
-              <img src="img/straight_razor_dark-400x400.png" alt="trimmer">
-            </div>
-            <h4 class="pd-bt-30"><a href="#">Straight Razor</a></h4>
-            <div class="text-box"><p>$30.00</p></div>
+          <div class="pd-bt-30">
+            <a class="btn-big" href="#">shop our product range</a>
           </div>
         </div>
-        <div class="pd-bt-30">
-          <a class="btn-big" href="#">shop our product range</a>
-        </div>
-      </div>
 
 
 
-    </section>
-    <!-- prodotti -->
+      </section>
+      <!-- prodotti -->
 
-    <!-- prodotti del mese -->
-    <div id="this-month-prd" class="container-full">
-      <div class="flex-box container-small">
-        <div class="sx">
-          <div class="flex-box image">
-            <img src="img/shaving_butter-400x400.png" alt="">
+      <!-- prodotti del mese -->
+      <div id="this-month-prd" class="container-full">
+        <div class="flex-box container-small">
+          <div class="sx">
+            <div class="flex-box image">
+              <img src="img/shaving_butter-400x400.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="dx">
-          <h2 class="pd-bt-20">this months featured product</h2>
-          <h3 class="pd-bt-30">Shaving Butter</h3>
-          <div class="text-box pd-bt-20">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet enim est, vel molestie dolor ultrices ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div>
-            <a class="btn-big" href="#">buy now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- prodotti del mese -->
-    <!-- reviews -->
-    <section id="reviews" class="container-full">
-      <div class="container-small">
-        <h2 class="pd-bt-20">what people say</h2>
-        <h3 class="pd-bt-30">Reviews</h3>
-        <div class="flex-box pd-bt-40">
-          <div class="box">
+          <div class="dx">
+            <h2 class="pd-bt-20">this months featured product</h2>
+            <h3 class="pd-bt-30">Shaving Butter</h3>
             <div class="text-box pd-bt-20">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet enim est, vel molestie dolor ultrices ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="item pd-bt-20">
-              <img class="circle" src="img/avadabarbers-trimcut-gallery6-200x200.jpg" alt="people">
+            <div>
+              <a class="btn-big" href="#">buy now</a>
             </div>
-            <div class="text-box"><p><strong>John Doe</strong></p></div>
           </div>
-          <div class="box">
-            <div class="text-box pd-bt-20">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
-            </div>
-            <div class="item pd-bt-20">
-              <img class="circle" src="img/avadabarbers-trimcut-gallery7-200x201.jpg" alt="people">
-            </div>
-            <div class="text-box"><p><strong>Pete Jones</strong></p></div>
-          </div>
-          <div class="box">
-            <div class="text-box pd-bt-20">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet placerat, ex nisi aliquam orci, ac varius odio libero et arcu.</p>
-            </div>
-            <div class="item pd-bt-20">
-              <img class="circle" src="img/avadabarbers-trimcut-gallery3-200x201.jpg" alt="people">
-            </div>
-            <div class="text-box"><p><strong>Mark Wilson</strong></p></div>
-          </div>
-
         </div>
       </div>
+      <!-- prodotti del mese -->
+      <!-- reviews -->
+      <section id="reviews" class="container-full">
+        <div class="container-small">
+          <h2 class="pd-bt-20">what people say</h2>
+          <h3 class="pd-bt-30">Reviews</h3>
+          <div class="flex-box pd-bt-40">
+            <div class="box" v-for="element in reviews">
+              <div class="text-box pd-bt-20">
+                <p>{{element.text}}</p>
+              </div>
+              <div class="item pd-bt-20">
+                <img class="circle" :src=" 'img/avadabarbers-trimcut-gallery' + element.id + '.jpg'" alt="people">
+              </div>
+              <div class="text-box"><p><strong>{{element.name}}</strong></p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- reviews -->
 
-    </section>
-    <!-- reviews -->
-
-    <!-- separatore -->
-    <div class="separator bg-grey container-full">
-      <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#ffffff;padding:0;"><path d="M-1 -1 L50 99 L101 -1 Z"></path></svg>
-    </div>
-    <!-- separatore -->
-
-    <section id="blog-posts" class="container-full">
-      <div class="container-small">
-        <h2 class="pd-bt-20">tales from the barber shop</h2>
-        <h3 class="pd-bt-30">Recent Blog Posts</h3>
+      <!-- separatore -->
+      <div class="separator bg-grey container-full">
+        <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#ffffff;padding:0;"><path d="M-1 -1 L50 99 L101 -1 Z"></path></svg>
       </div>
+      <!-- separatore -->
 
-    </section>
-  </main>
-  <footer></footer>
+      <section id="blog-posts" class="container-full">
+        <div class="container-small">
+          <h2 class="pd-bt-20">tales from the barber shop</h2>
+          <h3 class="pd-bt-30">Recent Blog Posts</h3>
+        </div>
+
+      </section>
+          </main>
+          <footer></footer>
+        </div>
 
 
 
