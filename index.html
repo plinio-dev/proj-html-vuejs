@@ -17,35 +17,33 @@
 <body>
   <div class="vue" id="app">
 
-
-
     <header >
       <div class="wrapper container-full">
         <!-- navbar -->
-        <nav class="container-full">
-          <!-- menu fisso -->
-          <div class="menu container-small">
-            <div class="logo">
-              <a href="#"><img id="logo" src="img/avadabarbers-logo-x2-300x104.png" alt=""></a>
+        <nav class="container-full" v-scroll="handleScroll">
+            <!-- menu fisso -->
+            <div class="menu container-small">
+              <div class="logo">
+                <a href="#"><img id="logo" src="img/avadabarbers-logo-x2-300x104.png" alt=""></a>
+              </div>
+              <div class="icone-menu">
+                <a class="pd-lf-20" href="#"><i id="cart" class="fas fa-shopping-cart"></i></a>
+                <a  @click="menuOn" class="pd-lf-20" href="#"><i id="hamburgher" class="fas fa-bars"></i></a>
+              </div>
             </div>
-            <div class="icone-menu">
-              <a class="pd-lf-20" href="#"><i id="cart" class="fas fa-shopping-cart"></i></a>
-              <a  @click="menuOn" class="pd-lf-20" href="#"><i id="hamburgher" class="fas fa-bars"></i></a>
+            <!-- menu fisso -->
+            <!-- flying menu -->
+            <div :class="display">
+              <div class="fly-menu">
+                <ul>
+                  <li v-for="(item,index) in menuItems"><a href=""><span>{{item}}</span></a></li>
+                </ul>
+                <div class="bgs-items"></div>
+                <div class="bgs-menu"></div>
+              </div>
             </div>
-          </div>
-          <!-- menu fisso -->
-          <!-- flying menu -->
-          <div :class="display">
-            <div class="fly-menu">
-              <ul>
-                <li v-for="(item,index) in menuItems"><a href=""><span>{{item}}</span></a></li>
-              </ul>
-              <div class="bgs-items"></div>
-              <div class="bgs-menu"></div>
-            </div>
-          </div>
-          <!-- flying menu -->
-        </nav>
+            <!-- flying menu -->
+          </nav>
         <!-- navbar -->
         <!-- hero -->
         <div class="hero container-full container-small">
