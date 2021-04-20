@@ -18,6 +18,10 @@ ul {
   list-style: none;
 }
 
+.fas {
+  color: #ffffff;
+}
+
 .container-full {
   width: 100%;
   display: flex;
@@ -39,6 +43,8 @@ ul {
 .btn-big {
   font-family: "Lato";
   font-size: 18px;
+  font-weight: 700;
+  color: #be9359;
   border: 2px solid #be9359;
   border-radius: 0px;
   padding: 17px 40px;
@@ -46,6 +52,7 @@ ul {
   width: -moz-fit-content;
   width: fit-content;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .flex {
@@ -58,6 +65,23 @@ ul {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-in-out 0s;
+}
+
+#hamburgher:hover, #cart:hover {
+  color: #be9359;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-big:hover, .btn-small:hover {
+  background: rgba(144, 105, 51, 0);
+  color: #906933;
+  border-color: #906933;
+  transition: all 0.25s ease-in-out;
+}
+
+ul li a span:hover {
+  color: #be9359;
+  transition: all 0.25s ease-in-out;
 }
 
 h1 {
@@ -91,7 +115,7 @@ span {
 }
 .wrapper .hero .hero-left .separator {
   border: 2px solid #be9359;
-  width: 30%;
+  width: 40%;
 }
 .wrapper .hero .hero-left p span {
   font-family: "Lato";
@@ -144,9 +168,6 @@ nav .fly-menu ul {
 nav .fly-menu ul li {
   margin-bottom: 40px;
 }
-nav .fly-menu ul .bgs-items {
-  background-image: url();
-}
 nav .fly-menu .bgs-menu {
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
@@ -168,7 +189,6 @@ nav .menu {
 nav .menu .logo #logo {
   width: 55%;
 }
-nav .menu .icone-menu #cart, nav .menu #hamburgher {
-  color: #ffffff;
+nav .menu .icone-menu {
   font-size: 18px;
 }

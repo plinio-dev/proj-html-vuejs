@@ -16,6 +16,10 @@ ul {
   list-style: none;
 }
 
+.fas {
+    color: #ffffff;
+}
+
 .container-full {
   width: 100%;
   display: flex;
@@ -32,17 +36,24 @@ ul {
   padding-bottom: 40px;
 }
 
+// bottoni
 .btn-big {
   font-family: "Lato";
   font-size: $fontBtn;
+  font-weight: 700;
+  color: $mainColor;
   border: 2px solid $mainColor;
   border-radius: 0px;
   padding: 17px 40px;
   width: fit-content;
   display: inline-block;
+  text-transform: uppercase;
 }
+// bottoni
 
 
+
+// class on click
 .flex{
   visibility: visible;
   opacity: 1;
@@ -54,3 +65,22 @@ ul {
   opacity: 0;
   transition: all .3s ease-in-out 0s;
 }
+// class on click
+
+// hover
+#hamburgher:hover, #cart:hover {
+  color:$mainColor;
+  transition: all .25s ease-in-out;
+}
+
+.btn-big:hover, .btn-small:hover {
+  background: rgba(144,105,51,0);
+  color: #906933;
+  border-color: #906933;
+  transition: all .25s ease-in-out;
+}
+ul li a span:hover {
+  color: $mainColor;
+  transition: all .25s ease-in-out;
+}
+// hover

@@ -17,7 +17,7 @@
 
       & .separator{
         border: 2px solid $mainColor;
-        width: 30%;
+        width: 40%;
       }
       & p span {
         font-family: "Lato";
@@ -75,13 +75,13 @@ nav {
       position: fixed;
       z-index: 1
     }
-
     & ul li {
       margin-bottom: 40px;
     }
-    & ul .bgs-items {
-      background-image: url();
-    }
+
+    // & ul .bgs-items {
+    //   background-image: url();
+    // }
 
     & .bgs-menu {
       background-color: rgba(0,0,0,0.9);
@@ -111,8 +111,9 @@ nav {
       }
     }
 
-    & .icone-menu #cart, #hamburgher {
-      color: #ffffff;
+
+
+    & .icone-menu {
       font-size: $fontSpan;
     }
 
