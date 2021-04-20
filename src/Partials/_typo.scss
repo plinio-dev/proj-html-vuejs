@@ -32,3 +32,8 @@ p {
   font-weight: 300;
   line-height: 1.8;
 }
+strong {
+  color: $mainColor;
+  font-size: $fontSpan;
+  font-weight: bold;
+}

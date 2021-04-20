@@ -115,6 +115,11 @@ ul li a span:hover {
   background-color: #181818;
 }
 
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 h1 {
   font-size: 87px;
   color: #dddddd;
@@ -153,6 +158,12 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.8;
+}
+
+strong {
+  color: #be9359;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -310,7 +321,7 @@ nav .menu .icone-menu {
 #this-month-prd .container-small {
   border-width: 4px 0px 0px;
   border-top: solid 4px #be9359;
-  margin-top: -20px;
+  margin-top: -40px;
 }
 #this-month-prd .container-small .sx {
   width: 40%;
@@ -333,4 +344,17 @@ nav .menu .icone-menu {
   flex-direction: column;
   background-color: #121414;
   padding: 5% 5% 0 5%;
+}
+
+#reviews {
+  margin-top: 100px;
+  padding: 120px 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+#reviews .box {
+  padding: 45px;
+}
+#reviews .item img {
+  width: 40%;
 }

@@ -107,9 +107,14 @@ ul li a span:hover {
   left: 50%;
   transform: translateX(-50%);
 }
+// background colors
 .bg-white {
   background-color: #ffffff;
 }
 .bg-brown {
   background-color: #181818;
+}
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
 }

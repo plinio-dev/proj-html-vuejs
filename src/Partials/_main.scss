@@ -67,7 +67,7 @@
   & .container-small {
     border-width: 4px 0px 0px;
     border-top: solid 4px $mainColor;
-    margin-top: -20px;
+    margin-top: -40px;
 
 
     & .sx {
@@ -93,5 +93,19 @@
       background-color: #121414;
       padding: 5% 5% 0 5%;
     }
+  }
+}
+
+
+#reviews {
+  margin-top: 100px;
+  padding: 120px 30px;
+  background-color: #ffffff;
+  text-align: center;
+  & .box{
+    padding: 45px;
+  }
+  & .item img {
+    width: 40%;
   }
 }
