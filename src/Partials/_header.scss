@@ -5,68 +5,114 @@
   background-repeat: no-repeat;
   background-position: left top;
   position: relative;
-}
-nav {
-  position: fixed;
-  z-index: 15;
-  top:0;
-  height: 122px;
-}
-.menu {
-  display: flex;
-  // background-color: coral;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
 
-  & #logo {
-    width: 55%;
-  }
-}
-#cart, #hamburgher {
-  color: #ffffff;
-  font-size: $fontSpan;
-}
+  & .hero {
+    margin-top: 122px;
 
-.hero {
-  margin-top: 122px;
+    & .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
 
-  & .hero-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-
-    & .separator{
-      border: 2px solid $mainColor;
-      width: 30%;
+      & .separator{
+        border: 2px solid $mainColor;
+        width: 30%;
+      }
+      & p span {
+        font-family: "Lato";
+        font-size: 24px;
+        color: $heroTextColor2;
+        font-weight: 300;
+      }
+      & .btn-big span {
+        color: $mainColor;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+      }
     }
-    & p span {
-      font-family: "Lato";
-      font-size: 24px;
-      color: $heroTextColor2;
-      font-weight: 300;
-    }
-    & .btn-big span {
-      color: $mainColor;
-      font-weight: 700;
-      font-style: normal;
-      text-transform: uppercase;
-    }
-  }
 
-  & .hero-wright {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    
-    & .barber {
+    & .hero-wright {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
 
-      & .barber img {
-        height: 100%;
+      & .barber {
+
+        & .barber img {
+          height: 100%;
+        }
       }
     }
   }
+
+}
+nav {
+  align-items: center;
+  position: fixed;
+  z-index: 40;
+  top:0;
+  height: 122px;
+
+  & .fly-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-y: auto;
+    padding: 0 25px 25px;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+
+    & ul li {
+      margin-bottom: 40px;
+    }
+    & ul .bgs-items {
+      background-image: url();
+    }
+
+  }
+  & .bgs-menu {
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 29;
+    min-height: 700px;
+
+  }
+
+  & .menu {
+    display: flex;
+    position: fixed;
+    z-index: 40;
+    // background-color: coral;
+    align-items: center;
+    justify-content: space-between;
+
+    & .logo {
+
+      & #logo {
+        width: 55%;
+      }
+    }
+
+    & .icone-menu #cart, #hamburgher {
+      color: #ffffff;
+      font-size: $fontSpan;
+    }
+
+  }
+
 }

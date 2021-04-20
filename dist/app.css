@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container-full {
   width: 100%;
   display: flex;
@@ -44,9 +48,25 @@ a {
   display: inline-block;
 }
 
+.opacity-1 {
+  opacity: 1;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.opacity-0 {
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
 h1 {
   font-size: 87px;
   color: #dddddd;
+  font-family: "Abril Fatface";
+}
+
+span {
+  color: #dddddd;
+  font-size: 26px;
   font-family: "Abril Fatface";
 }
 
@@ -58,60 +78,91 @@ h1 {
   background-position: left top;
   position: relative;
 }
-
-nav {
-  position: fixed;
-  z-index: 15;
-  top: 0;
-  height: 122px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo #logo {
-  width: 55%;
-}
-
-#cart, #hamburgher {
-  color: #ffffff;
-  font-size: 18px;
-}
-
-.hero {
+.wrapper .hero {
   margin-top: 122px;
 }
-.hero .hero-left {
+.wrapper .hero .hero-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
 }
-.hero .hero-left .separator {
+.wrapper .hero .hero-left .separator {
   border: 2px solid #be9359;
   width: 30%;
 }
-.hero .hero-left p span {
+.wrapper .hero .hero-left p span {
   font-family: "Lato";
   font-size: 24px;
   color: #686868;
   font-weight: 300;
 }
-.hero .hero-left .btn-big span {
+.wrapper .hero .hero-left .btn-big span {
   color: #be9359;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
 }
-.hero .hero-wright {
+.wrapper .hero .hero-wright {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
 }
-.hero .hero-wright .barber .barber img {
+.wrapper .hero .hero-wright .barber .barber img {
   height: 100%;
+}
+
+nav {
+  align-items: center;
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  height: 122px;
+}
+nav .fly-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-y: auto;
+  padding: 0 25px 25px;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+nav .fly-menu ul li {
+  margin-bottom: 40px;
+}
+nav .fly-menu ul .bgs-items {
+  background-image: url();
+}
+nav .bgs-menu {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 29;
+  min-height: 700px;
+}
+nav .menu {
+  display: flex;
+  position: fixed;
+  z-index: 40;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu .logo #logo {
+  width: 55%;
+}
+nav .menu .icone-menu #cart, nav .menu #hamburgher {
+  color: #ffffff;
+  font-size: 18px;
 }

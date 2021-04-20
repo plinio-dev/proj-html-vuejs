@@ -15,19 +15,39 @@
   <title>Barber shop</title>
 </head>
 <body>
-  <header>
+  <header id="app">
     <div class="wrapper container-full">
       <nav class="container-full">
+        <!-- menu fisso -->
         <div class="menu container-small">
           <div class="logo">
             <a href="#"><img id="logo" src="img/avadabarbers-logo-x2-300x104.png" alt=""></a>
           </div>
           <div class="icone-menu">
             <a class="pd-lf-20" href="#"><i id="cart" class="fas fa-shopping-cart"></i></a>
-            <a class="pd-lf-20" href="#"><i id="hamburgher" class="fas fa-bars"></i></a>
+            <a  @click="menuOn" class="pd-lf-20" href="#"><i id="hamburgher" class="fas fa-bars"></i></a>
           </div>
         </div>
+        <!-- menu fisso -->
+        <!-- flying menu -->
+        <div :class="opacity">
+          <div class="fly-menu">
+            <ul>
+              <li><a href=""><span>Home</span></a></li>
+              <li><a href=""><span>About US</span></a></li>
+              <li><a href=""><span>Services</span></a></li>
+              <li><a href=""><span>Shop</span></a></li>
+              <li><a href=""><span>Our Team</span></a></li>
+              <li><a href=""><span>Blog</span></a></li>
+              <li><a href=""><span>Contact Us</span></a></li>
+              <li><div class="bgs-items"></div></li>
+            </ul>
+          </div>
+          <div class="bgs-menu"></div>
+        </div>
+        <!-- flying menu -->
       </nav>
+      <!-- hero -->
       <div class="hero container-full container-small">
         <div class="hero-left">
           <a href="#"><h1 class="mrg-bttm-40">Barber Shop</h1></a>
@@ -45,6 +65,7 @@
           </div>
         </div>
       </div>
+      <!-- hero -->
     </div>
   </header>
 

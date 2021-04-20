@@ -12,6 +12,9 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
 
 .container-full {
   width: 100%;
@@ -37,4 +40,15 @@ a {
   padding: 17px 40px;
   width: fit-content;
   display: inline-block;
+}
+
+
+.opacity-1 {
+  opacity: 1;
+  transition: all .3s ease-in-out 0s;
+}
+
+.opacity-0 {
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
 }
