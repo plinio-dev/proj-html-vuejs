@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- vue js -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="dist/app.css">
@@ -13,11 +16,39 @@
 </head>
 <body>
   <header>
-    <div class="container"></div>
+    <div class="wrapper container-full">
+      <nav class="container-full">
+        <div class="menu container-small">
+          <div class="logo">
+            <a href="#"><img id="logo" src="img/avadabarbers-logo-x2-300x104.png" alt=""></a>
+          </div>
+          <div class="icone-menu">
+            <a class="pd-lf-20" href="#"><i id="cart" class="fas fa-shopping-cart"></i></a>
+            <a class="pd-lf-20" href="#"><i id="hamburgher" class="fas fa-bars"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero container-full container-small">
+        <div class="hero-left">
+          <a href="#"><h1 class="mrg-bttm-40">Barber Shop</h1></a>
+          <div class="mrg-bttm-40">
+            <div class="separator"></div>
+          </div>
+          <p class="mrg-bttm-40"><span>The Pinnacle of Male Grooming</span></p>
+          <div>
+            <a class="btn-big" href="#"><span>Learn more</span></a>
+          </div>
+        </div>
+        <div class="hero-wright">
+          <div class="barber">
+            <img src="img/avadabarbers_hero_focalmirror-600x825.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <div class="hero"></div>
-  
+
   <main>
     <section id="pro-barbers"></section>
     <section id="services"></section>
@@ -35,6 +66,6 @@
 
 
 
-<script src="dist/app.js" charset="utf-8"></script>
+<script src="src/app.js" charset="utf-8"></script>
 </body>
 </html>

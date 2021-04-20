@@ -1,0 +1,72 @@
+.wrapper {
+  background-image: url('../img/avadabarbers-hero-bg.jpg');
+  height: calc(100vh - 0px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+}
+nav {
+  position: fixed;
+  z-index: 15;
+  top:0;
+  height: 122px;
+}
+.menu {
+  display: flex;
+  // background-color: coral;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+
+  & #logo {
+    width: 55%;
+  }
+}
+#cart, #hamburgher {
+  color: #ffffff;
+  font-size: $fontSpan;
+}
+
+.hero {
+  margin-top: 122px;
+
+  & .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    & .separator{
+      border: 2px solid $mainColor;
+      width: 30%;
+    }
+    & p span {
+      font-family: "Lato";
+      font-size: 24px;
+      color: $heroTextColor2;
+      font-weight: 300;
+    }
+    & .btn-big span {
+      color: $mainColor;
+      font-weight: 700;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  & .hero-wright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    
+    & .barber {
+
+      & .barber img {
+        height: 100%;
+      }
+    }
+  }
+}

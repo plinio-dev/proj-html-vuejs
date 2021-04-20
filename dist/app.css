@@ -1,3 +1,117 @@
 body {
-  background-color: black;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-full {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-small {
+  width: 60%;
+}
+
+.pd-lf-20 {
+  padding-left: 20px;
+}
+
+.mrg-bttm-40 {
+  padding-bottom: 40px;
+}
+
+.btn-big {
+  font-family: "Lato";
+  font-size: 18px;
+  border: 2px solid #be9359;
+  border-radius: 0px;
+  padding: 17px 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 87px;
+  color: #dddddd;
+  font-family: "Abril Fatface";
+}
+
+.wrapper {
+  background-image: url("../img/avadabarbers-hero-bg.jpg");
+  height: calc(100vh - 0px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  height: 122px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo #logo {
+  width: 55%;
+}
+
+#cart, #hamburgher {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.hero {
+  margin-top: 122px;
+}
+.hero .hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.hero .hero-left .separator {
+  border: 2px solid #be9359;
+  width: 30%;
+}
+.hero .hero-left p span {
+  font-family: "Lato";
+  font-size: 24px;
+  color: #686868;
+  font-weight: 300;
+}
+.hero .hero-left .btn-big span {
+  color: #be9359;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.hero .hero-wright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.hero .hero-wright .barber .barber img {
+  height: 100%;
 }
