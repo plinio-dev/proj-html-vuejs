@@ -36,6 +36,14 @@ ul {
   padding-left: 20px;
 }
 
+.pd-bt-20 {
+  padding-bottom: 20px;
+}
+
+.pd-bt-30 {
+  padding-bottom: 30px;
+}
+
 .mrg-bttm-40 {
   padding-bottom: 40px;
 }
@@ -88,6 +96,21 @@ h1 {
   font-size: 87px;
   color: #dddddd;
   font-family: "Abril Fatface";
+}
+
+h3 {
+  font-size: 70px;
+  color: #b1b1b1;
+  font-family: "Abril Fatface";
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 16px;
+  color: #ae8652;
+  font-family: "Lato";
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 span {
@@ -191,4 +214,11 @@ nav .menu .logo #logo {
 }
 nav .menu .icone-menu {
   font-size: 18px;
+}
+
+#pro-barbers {
+  padding: 120px 30px;
+  background-image: url("../img/avadabarbers-about-introbackground.jpg");
+  justify-content: center;
+  text-align: center;
 }

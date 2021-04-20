@@ -3,6 +3,19 @@ h1 {
   color: $heroTextColor1;
   font-family: "Abril Fatface";
 }
+h3 {
+  font-size: $fontH3;
+  color: $h3Color;
+  font-family: "Abril Fatface";
+  font-weight: 900;
+}
+h2 {
+  font-size: $fontH2;
+  color: $h2Color;
+  font-family: "Lato";
+  text-transform: uppercase;
+  font-weight: 900;
+}
 span {
   color: $spanMenuColor;
   font-size: $fontMenuSpan;
