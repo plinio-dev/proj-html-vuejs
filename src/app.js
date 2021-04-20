@@ -5,15 +5,15 @@ var app = new Vue ({
 
   el: "#app",
   data: {
-    opacity: 'opacity-0'
+    display: 'none'
   },
 
   methods: {
     menuOn: function() {
-      if (this.opacity == 'opacity-0') {
-          this.opacity = 'opacity-1' ;
+      if (this.display == 'none') {
+          this.display = 'flex' ;
         }else {
-          this.opacity ='opacity-0';
+          this.display ='none';
         }
     }
   }
