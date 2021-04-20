@@ -47,6 +47,23 @@ var app = new Vue ({
         name: 'Straight Razor',
         prize: '$30.00',
       }
+    ],
+    services: [
+      {
+        img: 'img/avadabarbers-trimcut-icon-before.png',
+        title: 'Trim & Cut',
+        description: 'Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.',
+      },
+      {
+        img: 'img/avadabarbers-washndry-icon.png',
+        title: 'Wash & Dry',
+        description: 'Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.',
+      },
+      {
+        img: 'img/avadabarbers-beardtrim-icon.png',
+        title: 'Beard Tidy',
+        description: 'Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.',
+      },
     ]
   },
 

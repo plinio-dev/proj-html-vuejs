@@ -95,26 +95,12 @@
           <h2 class="pd-bt-20">mens grooming</h2>
           <h3 class="pd-bt-30">Services</h3>
           <div class="flex-box pd-bt-40">
-            <div class="box">
+            <div class="box" v-for="element in services" >
               <div class="item pd-bt-20">
-                <img src="img/avadabarbers-trimcut-icon-before.png" alt="trimmer">
+                <img :src="element.img" alt="trimmer">
               </div>
-              <h4 class="pd-bt-30"><a href="#">Trim & Cut</a></h4>
-              <div class="text-box"><p>Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.</p></div>
-            </div>
-            <div class="box">
-              <div class="item pd-bt-20">
-                <img src="img/avadabarbers-washndry-icon.png" alt="trimmer">
-              </div>
-              <h4 class="pd-bt-30"><a href="#">Wash & Dry</a></h4>
-              <div class="text-box"><p>Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.</p></div>
-            </div>
-            <div class="box">
-              <div class="item pd-bt-20">
-                <img src="img/avadabarbers-beardtrim-icon.png" alt="trimmer">
-              </div>
-              <h4 class="pd-bt-30"><a href="#">Beard Tidy</a></h4>
-              <div class="text-box"><p>Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.</p></div>
+              <h4 class="pd-bt-30"><a href="#">{{element.title}}</a></h4>
+              <div class="text-box"><p>{{element.description}}</p></div>
             </div>
           </div>
           <div class="pd-bt-30">
