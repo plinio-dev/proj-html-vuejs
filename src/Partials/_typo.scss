@@ -9,6 +9,11 @@ h3 {
   font-family: "Abril Fatface";
   font-weight: 900;
 }
+h4, h4 a {
+  font-size: $fontH4;
+  color: $h4Color;
+  font-family: "Abril Fatface";
+}
 h2 {
   font-size: $fontH2;
   color: $h2Color;
@@ -20,4 +25,10 @@ span {
   color: $spanMenuColor;
   font-size: $fontMenuSpan;
   font-family: "Abril Fatface";
+}
+p {
+  color: $pColor;
+  font-size: $fontSpan;
+  font-weight: 300;
+  line-height: 1.8;
 }

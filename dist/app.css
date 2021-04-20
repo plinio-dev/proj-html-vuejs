@@ -33,6 +33,10 @@ ul {
   width: 60%;
 }
 
+.flex-box {
+  display: flex;
+}
+
 .pd-lf-20 {
   padding-left: 20px;
 }
@@ -43,6 +47,10 @@ ul {
 
 .pd-bt-30 {
   padding-bottom: 30px;
+}
+
+.pd-bt-40 {
+  padding-bottom: 40px;
 }
 
 .mrg-bttm-40 {
@@ -94,11 +102,16 @@ ul li a span:hover {
 }
 
 .separator {
+  display: block;
   position: absolute;
   right: 0;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.bg-white {
+  background-color: #ffffff;
 }
 
 h1 {
@@ -114,6 +127,12 @@ h3 {
   font-weight: 900;
 }
 
+h4, h4 a {
+  font-size: 32px;
+  color: #be9359;
+  font-family: "Abril Fatface";
+}
+
 h2 {
   font-size: 16px;
   color: #ae8652;
@@ -126,6 +145,13 @@ span {
   color: #dddddd;
   font-size: 26px;
   font-family: "Abril Fatface";
+}
+
+p {
+  color: #686868;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.8;
 }
 
 .wrapper {
@@ -145,7 +171,7 @@ span {
   justify-content: center;
   width: 50%;
 }
-.wrapper .hero .hero-left .separator {
+.wrapper .hero .hero-left .separator1 {
   border: 2px solid #be9359;
   width: 40%;
 }
@@ -232,4 +258,23 @@ nav .menu .icone-menu {
   background-repeat: no-repeat;
   justify-content: center;
   text-align: center;
+}
+
+#services {
+  margin-top: 100px;
+  padding: 120px 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+#services .container-small .box {
+  display: inline-block;
+  padding: 30px 50px;
+  width: calc(100% / 3);
+  text-align: center;
+  align-items: center;
+}
+#services .container-small .box .item img {
+  vertical-align: top;
+  height: auto;
+  max-height: 110px;
 }

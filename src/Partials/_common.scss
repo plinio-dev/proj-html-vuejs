@@ -30,6 +30,9 @@ ul {
     width: 60%;
 }
 
+.flex-box {
+  display: flex;
+}
 .pd-lf-20 {
   padding-left: 20px;
 }
@@ -42,6 +45,9 @@ ul {
   padding-bottom: 30px;
 }
 
+.pd-bt-40 {
+  padding-bottom: 40px;
+}
 .mrg-bttm-40 {
   padding-bottom: 40px;
 }
@@ -97,9 +103,13 @@ ul li a span:hover {
 
 // separatore
 .separator {
+  display: block;
   position: absolute;
   right: 0;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
+}
+.bg-white {
+  background-color: #ffffff;
 }

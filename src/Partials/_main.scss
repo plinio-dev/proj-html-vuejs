@@ -6,5 +6,30 @@
   background-repeat: no-repeat;
   justify-content: center;
   text-align: center;
+}
 
+#services {
+  margin-top: 100px;
+  padding: 120px 30px;
+  background-color: #ffffff;
+  text-align: center;
+
+  & .container-small .box {
+    display: inline-block;
+    // display: flex;
+    // flex-direction: column;
+    padding: 30px 50px;
+    width: calc(100% / 3);
+    text-align: center;
+    align-items: center;
+
+    & .item {
+      & img{
+        vertical-align: top;
+        height: auto;
+        max-height: 110px;
+      }
+    }
+
+  }
 }
