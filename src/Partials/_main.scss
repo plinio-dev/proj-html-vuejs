@@ -35,7 +35,7 @@
 }
 
 #products {
-  position: relative;
+  // position: relative;
   margin-top: 100px;
   padding: 120px 30px;
   text-align: center;
@@ -57,6 +57,41 @@
     }
     & .text-box p {
       color: $mainColor;
+    }
+  }
+}
+
+#this-month-prd {
+  background-color: #ffffff;
+
+  & .container-small {
+    border-width: 4px 0px 0px;
+    border-top: solid 4px $mainColor;
+    margin-top: -20px;
+
+
+    & .sx {
+      width: 40%;
+      height: 420px;
+
+      & .image {
+        background-image: url("../img/avadabarbers-second-blog-700x441.jpg");
+        filter: grayscale(100%);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    & .dx {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      background-color: #121414;
+      padding: 5% 5% 0 5%;
     }
   }
 }
