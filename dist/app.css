@@ -278,3 +278,28 @@ nav .menu .icone-menu {
   height: auto;
   max-height: 110px;
 }
+
+#products {
+  position: relative;
+  margin-top: 100px;
+  padding: 120px 30px;
+  text-align: center;
+  background-image: url("../img/avadabarbers-reviewsbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#products .card {
+  display: inline-block;
+  padding: 30px 50px;
+  width: calc(100% / 4);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#products .card .card img {
+  width: 100%;
+}
+#products .card .text-box p {
+  color: #be9359;
+}
