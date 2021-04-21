@@ -217,7 +217,7 @@ strong {
   position: fixed;
   z-index: 40;
   top: 0;
-  height: 122px;
+  height: 100px;
 }
 .wrapper nav .fly-menu {
   display: flex;

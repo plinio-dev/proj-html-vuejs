@@ -53,7 +53,7 @@
     position: fixed;
     z-index: 40;
     top:0;
-    height: 122px;
+    height: 100px;
 
     & .fly-menu {
       display: flex;
@@ -99,7 +99,6 @@
       display: flex;
       position: fixed;
       z-index: 40;
-      // background-color: coral;
       align-items: center;
       justify-content: space-between;
 
@@ -109,8 +108,6 @@
           width: 55%;
         }
       }
-
-
 
       & .icone-menu {
         font-size: $fontSpan;
