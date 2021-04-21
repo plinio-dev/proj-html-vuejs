@@ -1,0 +1,18 @@
+.to-top{
+  z-index: 50;
+  right: 60px;
+  background-color: #333;
+  border-radius: 4px 4px 0 0;
+  bottom: 0;
+  height: 35px;
+  position: fixed;
+  text-align: center;
+  line-height: 35px;
+  width: 48px;
+  opacity: 0;
+  // transition: opacity .4s ease-in-out,background .2s ease-in-out;
+}
+
+#toTop:hover {
+  background-color: $mainColor;
+}

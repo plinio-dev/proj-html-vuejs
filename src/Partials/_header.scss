@@ -63,6 +63,17 @@ header {
     top:0;
     height: 100px;
 
+    .bar {
+      position: fixed;
+      z-index: 40;
+      top:0;
+      width: 100%;
+      height: 100px;
+      background-color: rgba(0,0,0,0.8);
+      opacity: 0;
+    }
+
+
     .fly-menu {
       display: flex;
       align-items: center;
