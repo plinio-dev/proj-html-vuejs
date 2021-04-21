@@ -1,11 +1,13 @@
 footer {
-
-
-  // display: block;
+  padding-top: 100px;
+  display: block;
+  margin: auto;
   background-color: $footerColor;
-  padding: 120px 0px;
   text-align: center;
 
+  // .container-small {
+  //   margin: auto;
+  // }
   .box{
     width: calc(100% / 3);
     display: flex;
@@ -22,9 +24,13 @@ footer {
         color: $heroTextColor1;
       }
     }
-
     .item img {
       width: 100%;
     }
   }
+  .copyright {
+    background-color: $copyColor;
+    padding: 50px 30px;
+  }
+
 }

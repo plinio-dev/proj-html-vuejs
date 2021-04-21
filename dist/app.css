@@ -52,12 +52,16 @@ ul {
   padding-bottom: 40px;
 }
 
+.pd-bt-60 {
+  padding-bottom: 60px;
+}
+
 .pd-tp-20 {
   padding-top: 20px;
 }
 
-.mrg-bttm-40 {
-  padding-bottom: 40px;
+.w-60 {
+  width: 60%;
 }
 
 .btn-big, .btn-small {
@@ -302,7 +306,7 @@ header {
 main {
   position: relative;
   z-index: 1;
-  margin-bottom: 600px;
+  margin-bottom: 700px;
 }
 
 #pro-barbers {
@@ -358,6 +362,7 @@ main {
 }
 
 #this-month-prd {
+  padding-bottom: 100px;
   background-color: #ffffff;
 }
 #this-month-prd .container-small {
@@ -389,7 +394,6 @@ main {
 }
 
 #reviews {
-  margin-top: 100px;
   padding: 120px 0px;
   background-color: #ffffff;
   text-align: center;
@@ -403,7 +407,8 @@ main {
 
 #blog-posts {
   margin-top: 100px;
-  padding: 120px 0px;
+  padding-top: 120px;
+  padding-bottom: 90px;
   background-color: #f5f5f5;
   text-align: center;
 }
@@ -431,8 +436,10 @@ main {
 }
 
 footer {
-  background-color: #161818;
-  padding: 120px 0px;
+  padding-top: 100px;
+  display: block;
+  margin: auto;
+  background-color: #121414;
   text-align: center;
 }
 footer .box {
@@ -452,4 +459,8 @@ footer .box .socials ul li a {
 }
 footer .box .item img {
   width: 100%;
+}
+footer .copyright {
+  background-color: #161818;
+  padding: 50px 30px;
 }
