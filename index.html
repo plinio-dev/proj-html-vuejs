@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- vue js -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <!-- vue scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -17,7 +19,7 @@
 <body>
   <div class="vue" id="app">
 
-    <header >
+    <header id="head" >
       <div class="wrapper container-full">
         <!-- navbar -->
         <nav class="container-full" >
@@ -277,7 +279,11 @@
 
 
     <div class="back">
-      <a href="#" id="toTop" class="to-top" v-scroll="handleScroll">
+      <a href="#" id="toTop" class="to-top" v-scroll="handleScroll" v-scroll-to="{
+        el: '#head',
+        easing: [.6, .80, .30, 1.9],
+        duration: 3000
+        }">
         <i class="fas fa-chevron-up"></i>
       </a>
     </div>

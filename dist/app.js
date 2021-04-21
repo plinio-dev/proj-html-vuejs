@@ -7,7 +7,7 @@
   \********************/
 /***/ (() => {
 
-// direttiva di vue
+// direttive di vue
 Vue.directive('scroll', {
   inserted: function inserted(el, binding) {
     var f = function f(evt) {
@@ -18,12 +18,33 @@ Vue.directive('scroll', {
 
     window.addEventListener('scroll', f);
   }
-});
+}); // scroll to top direttiva
+// var Vue = require('vue');
+// var VueScrollTo = require('vue-scrollto');
+//
+// Vue.use(VueScrollTo)
+//
+//
+// Vue.use(VueScrollTo, {
+//      container: "body",
+//      duration: 500,
+//      easing: "ease",
+//      offset: 0,
+//      force: true,
+//      cancelable: true,
+//      onStart: false,
+//      onDone: false,
+//      onCancel: false,
+//      x: false,
+//      y: true
+//  })
+// direttive di vue
+
 var app = new Vue({
   el: "#app",
   data: {
     display: 'none',
-    menuItems: ['Home', 'About US', 'Services', 'Shop', 'Our Team', 'Blog', 'Contact Us'],
+    menuItems: ['Home', 'About Us', 'Services', 'Shop', 'Our Team', 'Blog', 'Contact Us'],
     reviews: [{
       img: '6-200x200_1',
       name: 'John Doe',

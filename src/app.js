@@ -1,5 +1,5 @@
 
-// direttiva di vue
+// direttive di vue
 Vue.directive('scroll', {
   inserted: function(el, binding) {
     let f = function(evt) {
@@ -11,13 +11,37 @@ Vue.directive('scroll', {
   },
 });
 
+// scroll to top direttiva
+// var Vue = require('vue');
+// var VueScrollTo = require('vue-scrollto');
+//
+// Vue.use(VueScrollTo)
+//
+//
+// Vue.use(VueScrollTo, {
+//      container: "body",
+//      duration: 500,
+//      easing: "ease",
+//      offset: 0,
+//      force: true,
+//      cancelable: true,
+//      onStart: false,
+//      onDone: false,
+//      onCancel: false,
+//      x: false,
+//      y: true
+//  })
+ // direttive di vue
+
+
+
 var app = new Vue ({
 
   el: "#app",
   data: {
     display: 'none',
     menuItems: [
-      'Home', 'About US','Services','Shop','Our Team','Blog','Contact Us',
+      'Home', 'About Us','Services','Shop','Our Team','Blog','Contact Us',
     ],
     reviews: [
       {
@@ -110,8 +134,8 @@ var app = new Vue ({
       el.removeAttribute("style")
     }
     // return window.scrollY > 100;
-    }
-  }
+    },
 
+  }
 
 });
