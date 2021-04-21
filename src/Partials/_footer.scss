@@ -1,6 +1,8 @@
 footer {
+
+
+  // display: block;
   background-color: $footerColor;
-  margin-top: 100px;
   padding: 120px 0px;
   text-align: center;
 
@@ -10,8 +12,12 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 
+    .item .logo-footer {
+      width: 50%;
+    }
     .socials {
       justify-content: center;
+
       ul li a {
         color: $heroTextColor1;
       }

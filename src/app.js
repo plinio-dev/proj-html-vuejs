@@ -80,13 +80,13 @@ var app = new Vue ({
       icon: 'fab fa-facebook-f',
       },
       {
-      icon: 'fab fa-twitter',
+      icon: 'fab fa-twitter  pd-lf-20',
       },
       {
-      icon: 'fab fa-youtube',
+      icon: 'fab fa-youtube  pd-lf-20',
       },
       {
-      icon: 'fab fa-instagram',
+      icon: 'fab fa-instagram  pd-lf-20',
       },
     ]
   },

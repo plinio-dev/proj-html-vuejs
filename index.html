@@ -230,7 +230,7 @@
     </main>
 
 
-    <footer class="container-full">
+    <footer class="container-full parallax">
       <div class="container-small">
         <div class="flex-box pd-bt-40">
           <div class="box">
@@ -243,15 +243,15 @@
           </div>
           <div class="box">
             <div class="item">
-              <a href=""><img class="" src="img/avadabarbers-logo-x2-200x70.png" alt="people"></a>
+              <a href=""><img class="logo-footer pd-bt-20" src="img/avadabarbers-logo-x2-200x70.png" alt="people"></a>
             </div>
-            <h5 class="pd-bt-30 pd-tp-20">follow us</h5>
             <div class="text-box pd-bt-20">
               <p>Avada Barbers<br>123 New York Street<br>New York City<br>info@yourwebsite.com<br>+1 (555) 555-1212</p>
             </div>
+            <h5 class="pd-bt-30 pd-tp-20">follow us</h5>
             <div class="socials flex-box">
               <ul class="flex-box">
-                <li v-for="item in socials" :key="item.icon" class="pd-lf-20">
+                <li v-for="item in socials" :key="item.icon" >
                   <a href=""><i :class="item.icon"></i></a>
                 </li>
               </ul>

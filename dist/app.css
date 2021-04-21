@@ -136,6 +136,14 @@ ul li a span:hover {
   overflow: hidden;
 }
 
+.parallax {
+  z-index: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 h1 {
   font-size: 87px;
   color: #dddddd;
@@ -188,6 +196,11 @@ strong {
   color: #be9359;
   font-size: 18px;
   font-weight: bold;
+}
+
+header {
+  position: relative;
+  z-index: 1;
 }
 
 .wrapper {
@@ -284,6 +297,12 @@ strong {
 }
 .wrapper nav .menu .icone-menu {
   font-size: 18px;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 600px;
 }
 
 #pro-barbers {
@@ -413,7 +432,6 @@ strong {
 
 footer {
   background-color: #161818;
-  margin-top: 100px;
   padding: 120px 0px;
   text-align: center;
 }
@@ -422,6 +440,9 @@ footer .box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+footer .box .item .logo-footer {
+  width: 50%;
 }
 footer .box .socials {
   justify-content: center;
