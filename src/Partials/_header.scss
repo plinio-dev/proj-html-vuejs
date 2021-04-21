@@ -48,14 +48,14 @@
     }
   }
 
-  & nav {
+  nav {
     align-items: center;
     position: fixed;
     z-index: 40;
     top:0;
     height: 100px;
 
-    & .fly-menu {
+    .fly-menu {
       display: flex;
       align-items: center;
       justify-content: center;

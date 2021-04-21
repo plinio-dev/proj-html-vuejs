@@ -192,11 +192,83 @@
         <div class="container-small">
           <h2 class="pd-bt-20">tales from the barber shop</h2>
           <h3 class="pd-bt-30">Recent Blog Posts</h3>
+          <div class="flex-box pd-bt-40">
+            <div class="box">
+              <div class="item ">
+                <a href=""><img class="" src="img/avadabarbers-second-blog-700x441.jpg" alt="people"></a>
+              </div>
+              <h4 class="pd-bt-30 pd-tp-20"><a href="#">Avada Barbers Now Open</a></h4>
+              <div class="text-box pd-bt-20">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="item">
+                <a href=""><img class="" src="img/avadabarbers-choosing-blog-700x441.jpg" alt="people"></a>
+              </div>
+              <h4 class="pd-bt-30 pd-tp-20"><a href="#">Choosing The Right Barber</a></h4>
+              <div class="text-box pd-bt-20">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="item">
+                <a href=""><img class="" src="img/avadabarbers-ourservice-blog-700x441.jpg" alt="people"></a>
+              </div>
+              <h4 class="pd-bt-30 pd-tp-20"><a href="#">Quick Service Guide</a></h4>
+              <div class="text-box pd-bt-20">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,</p>
+              </div>
+            </div>
+          </div>
+          <div class="pd-bt-30">
+            <a class="btn-big" href="#">read more from our blog</a>
+          </div>
         </div>
 
       </section>
     </main>
-    <footer></footer>
+
+
+    <footer class="container-full">
+      <div class="container-small">
+        <div class="flex-box pd-bt-40">
+          <div class="box">
+            <div class="item ">
+              <a href=""><img src="img/avadabarbers_footer_shop_image-600x468.png" alt="people"></a>
+            </div>
+            <div class="pd-bt-30">
+              <a class="btn-small" href="#">shop our range now</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="item">
+              <a href=""><img class="" src="img/avadabarbers-logo-x2-200x70.png" alt="people"></a>
+            </div>
+            <h5 class="pd-bt-30 pd-tp-20">follow us</h5>
+            <div class="text-box pd-bt-20">
+              <p>Avada Barbers<br>123 New York Street<br>New York City<br>info@yourwebsite.com<br>+1 (555) 555-1212</p>
+            </div>
+            <div class="socials flex-box">
+              <ul class="flex-box">
+                <li v-for="item in socials" :key="item.icon" class="pd-lf-20">
+                  <a href=""><i :class="item.icon"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+            <div class="item">
+              <a href=""><img src="img/avadabarbers_footer_appointment_image-600x468.png" alt="people"></a>
+            </div>
+            <div class="pd-bt-30">
+              <a class="btn-small" href="#">book your appointment</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 
 <script src="src/app.js" charset="utf-8"></script>

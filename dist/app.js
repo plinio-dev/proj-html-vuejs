@@ -66,10 +66,23 @@ var app = new Vue({
       img: 'img/avadabarbers-beardtrim-icon.png',
       title: 'Beard Tidy',
       description: 'Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.'
+    }],
+    socials: [{
+      icon: 'fab fa-facebook-f'
+    }, {
+      icon: 'fab fa-twitter'
+    }, {
+      icon: 'fab fa-youtube'
+    }, {
+      icon: 'fab fa-instagram'
     }]
   },
   methods: {
-    menuOn: function menuOn() {
+    menuOn: function menuOn(event) {
+      if (event) {
+        event.preventDefault();
+      }
+
       if (this.display == 'none') {
         this.display = 'flex';
       } else {

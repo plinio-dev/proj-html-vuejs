@@ -74,15 +74,32 @@ var app = new Vue ({
         title: 'Beard Tidy',
         description: 'Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.',
       },
+    ],
+    socials: [
+      {
+      icon: 'fab fa-facebook-f',
+      },
+      {
+      icon: 'fab fa-twitter',
+      },
+      {
+      icon: 'fab fa-youtube',
+      },
+      {
+      icon: 'fab fa-instagram',
+      },
     ]
   },
 
   methods: {
-    menuOn: function() {
-      if (this.display == 'none') {
-          this.display = 'flex' ;
+    menuOn: function(event) {
+        if (event) {
+          event.preventDefault()
+        }
+        if (this.display == 'none') {
+            this.display = 'flex' ;
         }else {
-          this.display ='none';
+            this.display ='none';
         }
     },
 

@@ -47,22 +47,31 @@ ul {
 .pd-bt-40 {
   padding-bottom: 40px;
 }
+.pd-tp-20 {
+  padding-top: 20px;
+}
 .mrg-bttm-40 {
   padding-bottom: 40px;
 }
 
 // bottoni
-.btn-big {
+.btn-big, .btn-small  {
   font-family: "Lato";
-  font-size: $fontBtn;
   font-weight: 700;
   color: $mainColor;
   border: 2px solid $mainColor;
   border-radius: 0px;
-  padding: 17px 40px;
   width: fit-content;
   display: inline-block;
   text-transform: uppercase;
+}
+.btn-big {
+  font-size: $fontBtn;
+  padding: 17px 40px;
+}
+.btn-small {
+  font-size: $fontBtnSmall;
+  padding: 13px 29px;
 }
 // bottoni
 

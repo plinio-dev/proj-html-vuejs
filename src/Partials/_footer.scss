@@ -1,0 +1,24 @@
+footer {
+  background-color: $footerColor;
+  margin-top: 100px;
+  padding: 120px 0px;
+  text-align: center;
+
+  .box{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .socials {
+      justify-content: center;
+      ul li a {
+        color: $heroTextColor1;
+      }
+    }
+
+    .item img {
+      width: 100%;
+    }
+  }
+}
