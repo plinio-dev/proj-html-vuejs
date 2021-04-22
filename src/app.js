@@ -119,7 +119,7 @@ var app = new Vue ({
 
     handleScroll: function(evt, el) {
     if (window.scrollY > 50) {
-      el.setAttribute("style", "opacity: 1;  transition: all .3s ease-in-out .4s;")
+      el.setAttribute("style", "opacity: 1;  transition: all .2s ease-in-out .2s;")
     }else {
       el.removeAttribute("style")
     }
