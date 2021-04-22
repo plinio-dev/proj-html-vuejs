@@ -23,6 +23,9 @@ footer {
       ul li a {
         color: $heroTextColor1;
       }
+      ul li a:hover {
+        color: $mainColor;
+      }
     }
     .item img {
       width: 100%;

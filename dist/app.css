@@ -465,6 +465,9 @@ footer .box .socials {
 footer .box .socials ul li a {
   color: #dddddd;
 }
+footer .box .socials ul li a:hover {
+  color: #409AD3;
+}
 footer .box .item img {
   width: 100%;
 }
