@@ -18,28 +18,7 @@ Vue.directive('scroll', {
 
     window.addEventListener('scroll', f);
   }
-}); // scroll to top direttiva
-// var Vue = require('vue');
-// var VueScrollTo = require('vue-scrollto');
-//
-// Vue.use(VueScrollTo)
-//
-//
-// Vue.use(VueScrollTo, {
-//      container: "body",
-//      duration: 500,
-//      easing: "ease",
-//      offset: 0,
-//      force: true,
-//      cancelable: true,
-//      onStart: false,
-//      onDone: false,
-//      onCancel: false,
-//      x: false,
-//      y: true
-//  })
-// direttive di vue
-
+});
 var app = new Vue({
   el: "#app",
   data: {
@@ -112,7 +91,7 @@ var app = new Vue({
     },
     handleScroll: function handleScroll(evt, el) {
       if (window.scrollY > 50) {
-        el.setAttribute("style", "opacity: 1;  transition: all .3s ease-in-out 0s;");
+        el.setAttribute("style", "opacity: 1;  transition: all .3s ease-in-out .4s;");
       } else {
         el.removeAttribute("style");
       } // return window.scrollY > 100;

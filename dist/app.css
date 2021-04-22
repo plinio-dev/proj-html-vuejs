@@ -67,8 +67,8 @@ ul {
 .btn-big, .btn-small {
   font-family: "Lato";
   font-weight: 700;
-  color: #be9359;
-  border: 2px solid #be9359;
+  color: #409AD3;
+  border: 2px solid #409AD3;
   border-radius: 0px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -100,7 +100,7 @@ ul {
 }
 
 #hamburgher:hover, #cart:hover {
-  color: #be9359;
+  color: #409AD3;
   transition: all 0.25s ease-in-out;
 }
 
@@ -112,7 +112,7 @@ ul {
 }
 
 ul li a span:hover {
-  color: #be9359;
+  color: #409AD3;
   transition: all 0.25s ease-in-out;
 }
 
@@ -156,7 +156,7 @@ h1 {
 
 h2 {
   font-size: 16px;
-  color: #ae8652;
+  color: #409AD3;
   font-family: "Lato";
   text-transform: uppercase;
   font-weight: 900;
@@ -171,13 +171,13 @@ h3 {
 
 h4, h4 a {
   font-size: 32px;
-  color: #be9359;
+  color: #409AD3;
   font-family: "Abril Fatface";
 }
 
 h5 {
   font-size: 16px;
-  color: #be9359;
+  color: #409AD3;
   font-family: "Lato";
   text-transform: uppercase;
   font-weight: 700;
@@ -197,7 +197,7 @@ p {
 }
 
 strong {
-  color: #be9359;
+  color: #409AD3;
   font-size: 18px;
   font-weight: bold;
 }
@@ -225,7 +225,7 @@ header {
   width: 50%;
 }
 .wrapper .hero .hero-left .separator1 {
-  border: 2px solid #be9359;
+  border: 2px solid #409AD3;
   width: 40%;
 }
 .wrapper .hero .hero-left p span {
@@ -235,7 +235,7 @@ header {
   font-weight: 300;
 }
 .wrapper .hero .hero-left .btn-big span {
-  color: #be9359;
+  color: #409AD3;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
@@ -367,7 +367,7 @@ main {
   width: 100%;
 }
 #products .card .text-box p {
-  color: #be9359;
+  color: #409AD3;
 }
 
 #this-month-prd {
@@ -376,7 +376,7 @@ main {
 }
 #this-month-prd .container-small {
   border-width: 4px 0px 0px;
-  border-top: solid 4px #be9359;
+  border-top: solid 4px #409AD3;
   margin-top: -40px;
 }
 #this-month-prd .container-small .sx {
@@ -488,5 +488,58 @@ footer .copyright {
 }
 
 #toTop:hover {
-  background-color: #be9359;
+  background-color: #409AD3;
+}
+
+.dx-btn {
+  z-index: 1000000;
+  position: fixed;
+  right: 14px;
+  top: 150px;
+  transition: background-color 0.3s ease-in-out 0.3s, width 0s ease-in-out 0.6s, padding 0s ease-in-out 0.6s;
+}
+.dx-btn .demo-btn {
+  margin-bottom: 10px;
+}
+.dx-btn .demo-btn, .dx-btn .cart-btn {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 7px 6px;
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 6px;
+  line-height: 1;
+}
+.dx-btn .demo-btn span svg, .dx-btn .cart-btn span svg {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  fill: #33475b;
+}
+.dx-btn .demo-btn .after, .dx-btn .cart-btn .after {
+  transform: translateX(60px) scaleX(-1);
+}
+.dx-btn .demo-btn p, .dx-btn .cart-btn p {
+  font-size: 13px;
+}
+
+.cart-btn span .before {
+  transform: translateX(0) scaleX(-1);
+  transition: transform 0.2s cubic-bezier(0.21, 0.6, 0.35, 1);
+}
+
+.cart-btn:hover span .before {
+  transform: translateX(-60px) scaleX(-1);
+  transition: transform 0.2s cubic-bezier(0.21, 0.6, 0.35, 1);
+}
+
+.cart-btn:hover span .after {
+  transform: translateX(0px) scaleX(-1);
+  transition: transform 0.2s cubic-bezier(0.21, 0.6, 0.35, 1);
 }
