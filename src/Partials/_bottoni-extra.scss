@@ -44,6 +44,7 @@
     background-color: #fff;
     border-radius: 6px;
     line-height: 1;
+    box-shadow: 0 10px 20px 5px rgb(0 0 0 / 15%);
 
     span svg {
       position: absolute;
@@ -61,6 +62,7 @@
   }
 }
 
+// effetto hover cart icon
 .cart-btn span .before {
   transform: translateX(0) scaleX(-1);
   transition: transform .2s cubic-bezier(.21,.6,.35,1);
@@ -71,6 +73,22 @@
   transition: transform .2s cubic-bezier(.21,.6,.35,1);
 }
 .cart-btn:hover span .after{
+  transform: translateX(0px) scaleX(-1);
+  transition: transform .2s cubic-bezier(.21,.6,.35,1);
+}
+// effetto hover cart iconù
+
+// effetto hover demo icon
+.demo-btn span .before {
+  transform: translateX(0) scaleX(-1);
+  transition: transform .2s cubic-bezier(.21,.6,.35,1);
+}
+
+.demo-btn:hover span .before {
+  transform: translateX(-60px) scaleX(-1);
+  transition: transform .2s cubic-bezier(.21,.6,.35,1);
+}
+.demo-btn:hover span .after{
   transform: translateX(0px) scaleX(-1);
   transition: transform .2s cubic-bezier(.21,.6,.35,1);
 }
