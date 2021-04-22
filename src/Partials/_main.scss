@@ -4,8 +4,6 @@ main {
   margin-bottom: 700px;
 }
 
-
-
 #pro-barbers {
   padding: 120px 30px;
   background-image: url('../img/avadabarbers-about-introbackground.jpg');
@@ -21,15 +19,15 @@ main {
   background-color: #ffffff;
   text-align: center;
 
-  & .container-small .box {
+  .container-small .box {
     display: inline-block;
     padding: 30px 50px;
     width: calc(100% / 3);
     text-align: center;
     align-items: center;
 
-    & .item {
-      & img{
+    .item {
+      img{
         vertical-align: top;
         height: auto;
         max-height: 110px;
@@ -40,7 +38,6 @@ main {
 }
 
 #products {
-  // position: relative;
   margin-top: 100px;
   padding: 120px 30px;
   text-align: center;
@@ -48,7 +45,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 
-  & .card {
+  .card {
     display: inline-block;
     padding: 30px 50px;
     width: calc(100% / 4);
@@ -57,10 +54,10 @@ main {
     flex-direction: column;
     align-items: center;
 
-    & .card img {
+    .card img {
       width: 100%;
     }
-    & .text-box p {
+    .text-box p {
       color: $mainColor;
     }
   }
@@ -70,17 +67,17 @@ main {
   padding-bottom: 100px;
   background-color: #ffffff;
 
-  & .container-small {
+  .container-small {
     border-width: 4px 0px 0px;
     border-top: solid 4px $mainColor;
     margin-top: -40px;
 
 
-    & .sx {
+    .sx {
       width: 40%;
       height: 420px;
 
-      & .image {
+      .image {
         background-image: url("../img/avadabarbers-second-blog-700x441.jpg");
         filter: grayscale(100%);
         background-size: cover;
@@ -92,7 +89,7 @@ main {
         justify-content: center;
       }
     }
-    & .dx {
+    .dx {
       width: 60%;
       display: flex;
       flex-direction: column;
@@ -102,16 +99,15 @@ main {
   }
 }
 
-
 #reviews {
   padding: 120px 0px;
   background-color: #ffffff;
   text-align: center;
 
-  & .box{
+  .box{
     padding: 45px;
   }
-  & .item img {
+  .item img {
     width: 40%;
   }
 }
@@ -126,7 +122,7 @@ main {
   .flex-box .box:nth-child(2) {
     margin: 0px 30px;
   }
-  & .box{
+  .box{
     width: calc(100% / 3);
     display: flex;
     flex-direction: column;
