@@ -75,6 +75,14 @@ var app = new Vue({
       icon: 'fab fa-youtube  pd-lf-20'
     }, {
       icon: 'fab fa-instagram  pd-lf-20'
+    }],
+    shop: [{
+      img: 'img/avadabarbers_footer_shop_image-600x468.png',
+      text: 'shop our rang now'
+    }],
+    book: [{
+      img: 'img/avadabarbers_footer_appointment_image-600x468.png',
+      text: 'book your appointment'
     }]
   },
   methods: {

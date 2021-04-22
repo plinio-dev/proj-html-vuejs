@@ -237,12 +237,12 @@
     <footer class="parallax">
       <div class="container-full pd-bt-60">
         <div class="flex-box pd-bt-40 w-60">
-          <div class="box">
-            <div class="item ">
-              <a href=""><img src="img/avadabarbers_footer_shop_image-600x468.png" alt="people"></a>
+          <div class="box" v-for="element in shop">
+            <div class="item">
+              <a href=""><img :src="element.img" alt="people"></a>
             </div>
             <div class="pd-bt-30">
-              <a class="btn-small" href="#">shop our range now</a>
+              <a class="btn-small" href="#">{{element.text}}</a>
             </div>
           </div>
           <div class="box">
@@ -261,12 +261,12 @@
               </ul>
             </div>
           </div>
-          <div class="box">
+          <div class="box" v-for="element in book">
             <div class="item">
-              <a href=""><img src="img/avadabarbers_footer_appointment_image-600x468.png" alt="people"></a>
+              <a href=""><img :src="element.img" alt="people"></a>
             </div>
             <div class="pd-bt-30">
-              <a class="btn-small" href="#">book your appointment</a>
+              <a class="btn-small" href="#">{{element.text}}</a>
             </div>
           </div>
         </div>
